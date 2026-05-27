@@ -1,0 +1,10 @@
+services:
+  rss-matrix-bot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - ./config.toml:/app/config.toml:ro
+      - ./data:/data
+    environment:
+      - CONFIG_PATH=/app/config.toml
+      - RUST_LOG=info

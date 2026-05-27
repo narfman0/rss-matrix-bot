@@ -1,0 +1,22 @@
+[matrix]
+homeserver = "http://192.168.1.11:8008"
+username = "rssbot"
+password = "rssbot.password.secure"
+room_id = "!REPLACE_WITH_REAL_ROOM_ID:blastedstudios.com"
+
+[settings]
+poll_interval_secs = 1800
+max_items_per_feed = 3
+state_file = "/data/state.json"
+
+[[feeds]]
+name = "Rock Paper Shotgun"
+url = "https://www.rockpapershotgun.com/feed"
+
+[[feeds]]
+name = "Slashdot"
+url = "https://rss.slashdot.org/Slashdot/slashdotMain"
+
+[[feeds]]
+name = "Hacker News"
+url = "https://hnrss.org/frontpage"
